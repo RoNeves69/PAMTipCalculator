@@ -11,7 +11,9 @@
                 Text="Conta"/>
             <Entry
                 x:Name="AmountEntry" 
-                 Placeholder="Digite aqui o valor"/>
+                 Placeholder="Digite aqui o valor"
+                TextChanged="AmountEntry_TextChanged"
+                />
 
             <Label 
                Text="Gorjeta"/>
@@ -33,7 +35,9 @@
                 x:Name="TipSlider"
                 Maximum="50"
                 Minimum="0"
-                Value="20" />
+                Value="20" 
+                ValueChanged="TipSlider_ValueChanged"
+                />
             
             <Button x:Name="SetLowTip" Text="15%" Clicked="SetLowTip_Clicked"/>
             <Button x:Name="SetHighTip" Text="20%" Clicked="SetHighTip_Clicked"/>
